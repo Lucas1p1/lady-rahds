@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-32 px-6 md:px-10"
+      className="relative py-20 px-6 md:px-10"
       data-cursor-zone="science"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-5 gap-16 items-start">

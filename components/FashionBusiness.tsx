@@ -11,7 +11,7 @@ export default function FashionBusiness() {
   return (
     <section
       id="fashion"
-      className="relative py-32 overflow-hidden"
+      className="relative py-20 overflow-hidden"
       data-cursor-zone="fashion"
     >
       <div

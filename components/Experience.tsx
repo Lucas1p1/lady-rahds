@@ -15,7 +15,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative py-32 px-6 md:px-10"
+      className="relative py-20 px-6 md:px-10"
       data-cursor-zone="science"
     >
       <div className="max-w-4xl mx-auto">

@@ -23,7 +23,7 @@ function MagneticButton({
   const btnRef = useRef<HTMLButtonElement>(null);
 
   const buttonClass =
-    "px-8 py-4 rounded-full bg-ink-900 text-white text-sm tracking-wide inline-flex items-center gap-2 hover:opacity-90";
+    "px-8 py-4 rounded-full bg-ink-900 text-canvas text-sm tracking-wide inline-flex items-center gap-2 hover:opacity-90";
 
   const makeHandleMove =
     (el: HTMLElement | null) => (e: MouseEvent) => {
@@ -81,7 +81,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-32"
+      className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-20"
       data-cursor-zone="fashion"
     >
       <AuroraBackground className="opacity-80" />

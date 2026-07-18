@@ -39,7 +39,7 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="relative py-24"
+      className="relative py-20"
       data-cursor-zone="science"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10 mb-12 text-center">

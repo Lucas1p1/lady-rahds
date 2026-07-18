@@ -36,7 +36,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative py-32 px-6 md:px-10 bg-canvas/70 backdrop-blur-sm"
+      className="relative py-20 px-6 md:px-10 bg-canvas/70 backdrop-blur-sm"
       data-cursor-zone="neutral"
     >
       <div className="max-w-6xl mx-auto">

@@ -11,12 +11,12 @@ export const profile = {
   tagline:
     "I study what's under the microscope, and I build what people wear with pride. Precision and beauty are the same discipline to me.",
   location: "Lagos, Nigeria",
-  email: "hello@rahmatdawood.com",
-  socials: [
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "Twitter / X", href: "https://twitter.com" },
-  ],
+  email: "drahmatadeola@gmail.com",
+ socials: [
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/rahmat-adeola-dawood-792b9a171" },
+  { label: "Instagram", href: "https://www.instagram.com/rahdel_a" },
+  { label: "Twitter / X", href: "https://x.com/dee_rahmah" },
+],
 };
 
 export const about = {
@@ -204,7 +204,7 @@ export const fashion = {
       title: "Silk Scarves",
       caption: "Hand-finished, limited runs",
       image:
-        "https://images.pexels.com/photos/36455708/pexels-photo-36455708.jpeg?cs=srgb&dl=pexels-dauphotographer-36455708.jpg&fm=jpg",
+        "https://images.pexels.com/photos/31776039/pexels-photo-31776039.jpeg?cs=srgb&dl=pexels-m-zass-2150951548-31776039.jpg&fm=jpg",
     },
     {
       title: "Perfumes & Perfume Oils",
@@ -216,7 +216,7 @@ export const fashion = {
       title: "Oriflame Skincare",
       caption: "Trusted skincare essentials",
       image:
-        "https://images.pexels.com/photos/34939732/pexels-photo-34939732.jpeg?cs=srgb&dl=pexels-prolificpeople-34939732.jpg&fm=jpg",
+        "https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45590%2FNG%2F45590_1.png&MediaId=17460209&Version=1&w=1600&bc=%23f5f5f5&ib=%23f5f5f5&q=90&imageFormat=WebP",
     },
   ],
 };

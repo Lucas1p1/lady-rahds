@@ -75,10 +75,10 @@ export default function Navbar() {
           scrolled ? "shadow-glass-lg" : "shadow-glass"
         }`}
       >
-        <a href="#hero" className="font-display text-sm tracking-wide shrink-0">
-          {profile.name.split(" ")[0]}
-          <span className="gradient-text">.</span>
-        </a>
+        <a href="#hero" className="font-display text-2xl tracking-wide shrink-0">
+  {profile.name[0]}
+  <span className="gradient-text">.</span>
+</a>
 
         <ul className="hidden lg:flex items-center gap-5 text-xs uppercase tracking-widest text-ink-500 shrink-0">
           {links.map((link) => {
@@ -107,7 +107,7 @@ export default function Navbar() {
           <ThemeToggle />
           <a
             href="#contact"
-            className="hidden lg:inline-flex text-xs uppercase tracking-widest px-4 py-2 rounded-full bg-ink-900 text-white hover:opacity-85 transition-opacity whitespace-nowrap"
+            className="hidden lg:inline-flex text-xs uppercase tracking-widest px-4 py-2 rounded-full bg-ink-900 text-canvas hover:opacity-85 transition-opacity whitespace-nowrap"
           >
             Say Hello
           </a>
@@ -159,7 +159,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="mt-2 flex items-center justify-center text-xs uppercase tracking-widest px-4 py-3 rounded-full bg-ink-900 text-white"
+              className="mt-2 flex items-center justify-center text-xs uppercase tracking-widest px-4 py-3 rounded-full bg-ink-900 text-canvas"
             >
               Say Hello
             </a>

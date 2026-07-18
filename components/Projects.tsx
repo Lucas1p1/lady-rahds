@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative py-32 px-6 md:px-10"
+      className="relative py-20 px-6 md:px-10"
       data-cursor-zone="neutral"
     >
       <div className="max-w-6xl mx-auto">
