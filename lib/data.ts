@@ -66,44 +66,84 @@ export const skillColumns = {
 
 export const experience = [
   {
-    year: "2024 — Present",
-    role: "Founder & Creative Director",
-    org: "Luxury Abaya & Scarf Atelier",
+    year: "Jan 2026 — Jun 2026",
+    role: "Operations Executive",
+    org: "TDAdvisory",
     category: "business",
     description:
-      "Built a boutique fashion label from concept to customer — sourcing, design direction, brand identity, and a direct-to-consumer sales channel.",
+      "Coordinated daily business operations and administrative workflows, supported cross-functional project execution, and helped develop SOPs to improve internal processes.",
   },
   {
-    year: "2022 — 2024",
-    role: "Medical Laboratory Scientist",
-    org: "Regional Diagnostic Centre",
-    category: "science",
-    description:
-      "Delivered accurate diagnostic testing across hematology and microbiology, maintaining rigorous QA standards in a high-volume clinical environment.",
-  },
-  {
-    year: "2021 — 2022",
-    role: "Research Assistant",
-    org: "University Medical Research Unit",
-    category: "science",
-    description:
-      "Supported clinical research studies — protocol adherence, sample handling, and data collection feeding into peer-reviewed findings.",
-  },
-  {
-    year: "2019 — 2021",
-    role: "Sales & Business Development Lead",
-    org: "Healthcare Distribution Company",
+    year: "Jan 2026 — Apr 2026",
+    role: "Operations Manager",
+    org: "Clafiya",
     category: "business",
     description:
-      "Grew regional accounts and led a small commercial team, translating technical product knowledge into client trust and revenue.",
+      "Managed daily operations to support efficient healthcare service delivery, coordinated customer support, and drove workflow improvements across cross-functional teams.",
   },
   {
-    year: "2018",
+    year: "Jun 2024 — Jun 2025",
+    role: "Intern Medical Laboratory Scientist",
+    org: "Federal Medical Centre, Abeokuta",
+    category: "science",
+    description:
+      "Rotated through Haematology, Blood Transfusion Science, Chemical Pathology, Microbiology, Parasitology, and Histopathology — flagging critical values to clinicians and using LIMS for specimen tracking.",
+  },
+  {
+    year: "Nov 2022 — May 2023",
+    role: "Student Intern",
+    org: "Obafemi Awolowo University Teaching Hospital, Ile-Ife",
+    category: "science",
+    description:
+      "Performed PCR and full blood count testing under supervision, communicated patient records and procedures professionally, and reported results to physicians in a timely manner.",
+  },
+  {
+    year: "Sep 2022 — Oct 2022",
+    role: "Student Intern",
+    org: "Federal Medical Centre, Abeokuta",
+    category: "science",
+    description:
+      "Carried out laboratory testing across chemical, hematological, microbiological, and histopathological units, and gained competency on automated chemistry and hematology analyzers.",
+  },
+  {
+    year: "Jan 2021 — Aug 2022",
+    role: "Student Intern",
+    org: "Federal Medical Centre, Owo",
+    category: "science",
+    description:
+      "Analyzed samples across Microbiology, Clinical Chemistry, Haematology, Serology, Histopathology, and Blood Transfusion under a Lead Scientist, and performed correct phlebotomy practice.",
+  },
+  {
+    year: "Mar 2022 — May 2022",
+    role: "Student Intern",
+    org: "Kenny Ogun Laboratory Complex, Abeokuta",
+    category: "science",
+    description:
+      "Collaborated with trainees from other institutions to generate quality test results, and assisted in developing and evaluating new lab procedures.",
+  },
+  {
+    year: "Dec 2020 — Jan 2021",
+    role: "Student Intern",
+    org: "Dunia Hospital, Agege",
+    category: "science",
+    description:
+      "Handled collection and processing of clinical samples for routine analysis under close supervision of the Lead Medical Laboratory Scientist.",
+  },
+  {
+    year: "Aug 2019 — Oct 2019",
+    role: "Student Intern",
+    org: "Compromed Laboratory Services, Abeokuta",
+    category: "science",
+    description:
+      "Conducted lab tasks across chemical, hematology, microbiology, and serology, checking test accuracy before reporting with close attention to detail.",
+  },
+  {
+    year: "2019 — 2023",
     role: "B.MLS, Medical Laboratory Science",
-    org: "University Degree",
+    org: "Achievers University, Owo",
     category: "science",
     description:
-      "Graduated with a foundation in clinical diagnostics, pathology, and laboratory management that still underpins everything I build today.",
+      "Graduated First Class with honors including Best Student in Haematology & Blood Group Serology and Most Industrious Student — a foundation in clinical diagnostics that underpins everything since.",
   },
 ];
 
@@ -152,12 +192,32 @@ export const projects = [
 
 export const fashion = {
   intro:
-    "A luxury abaya and scarf label built on the same standard I hold in the lab: nothing leaves until it's right.",
+    "A beauty and modest-wear business built on the same standard I hold in the lab: nothing leaves until it's right. Abayas, scarves, perfumes, and skincare — curated and sold with the same care.",
   gallery: [
-    { title: "The Noor Collection", caption: "Signature abayas, tailored silhouette" },
-    { title: "Silk Route Scarves", caption: "Hand-finished, limited runs" },
-    { title: "Atelier Essentials", caption: "Everyday luxury, made to layer" },
-    { title: "Bridal Capsule", caption: "Made-to-order, seasonal" },
+    {
+      title: "Abaya Collection",
+      caption: "Signature abayas, tailored silhouette",
+      image:
+        "https://images.pexels.com/photos/19987022/pexels-photo-19987022.jpeg?cs=srgb&dl=pexels-darkshadephotos-19987022.jpg&fm=jpg",
+    },
+    {
+      title: "Silk Scarves",
+      caption: "Hand-finished, limited runs",
+      image:
+        "https://images.pexels.com/photos/36455708/pexels-photo-36455708.jpeg?cs=srgb&dl=pexels-dauphotographer-36455708.jpg&fm=jpg",
+    },
+    {
+      title: "Perfumes & Perfume Oils",
+      caption: "Signature scents, long-lasting oils",
+      image:
+        "https://images.pexels.com/photos/34690231/pexels-photo-34690231.jpeg?cs=srgb&dl=pexels-oceanofstars-34690231.jpg&fm=jpg",
+    },
+    {
+      title: "Oriflame Skincare",
+      caption: "Trusted skincare essentials",
+      image:
+        "https://images.pexels.com/photos/34939732/pexels-photo-34939732.jpeg?cs=srgb&dl=pexels-prolificpeople-34939732.jpg&fm=jpg",
+    },
   ],
 };
 

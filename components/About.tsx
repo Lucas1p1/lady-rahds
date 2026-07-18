@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import { about, profile } from "@/lib/data";
 
 export default function About() {
@@ -19,7 +20,15 @@ export default function About() {
           className="md:col-span-2"
         >
           <div className="relative aspect-[4/5] rounded-[28px] glass-panel overflow-hidden">
-            <div className="absolute inset-0 aurora-bg opacity-70" />
+            <Image
+              src="/video/the-rahds.JPEG"
+              alt={profile.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover"
+              priority
+              unoptimized
+            />
             <div className="absolute inset-0 flex items-end p-6">
               <div className="glass rounded-2xl px-4 py-3">
                 <p className="text-xs uppercase tracking-widest text-ink-500">

@@ -25,7 +25,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rahmat Dawood — Medical Laboratory Scientist & Founder",
+  title: "Rahmat Dawood Adeola — Medical Laboratory Scientist & Founder",
   description:
     "Portfolio of a Medical Laboratory Scientist and entrepreneur working at the intersection of science, research, business, and luxury fashion.",
 };
@@ -37,6 +37,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                try {
+                  var stored = localStorage.getItem("theme");
+                  var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                  var isDark = stored ? stored === "dark" : prefersDark;
+                  if (isDark) document.documentElement.classList.add("dark");
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="font-sans antialiased bg-canvas text-ink-900">
         <AmbientBackground />
         <CustomCursor />

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import { useRef } from "react";
 import { fashion } from "@/lib/data";
 
@@ -38,7 +39,7 @@ export default function FashionBusiness() {
             transition={{ delay: 0.1 }}
             className="font-display text-4xl md:text-5xl tracking-tight mb-6"
           >
-            Luxury Abaya &amp; Scarf Business
+            Beauty, Fragrance &amp; Modest Wear
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -74,7 +75,7 @@ function GalleryCard({
   item,
   index,
 }: {
-  item: { title: string; caption: string };
+  item: { title: string; caption: string; image: string };
   index: number;
 }) {
   return (
@@ -86,7 +87,14 @@ function GalleryCard({
       whileHover={{ scale: 1.02 }}
       className="relative snap-start shrink-0 w-[280px] md:w-[340px] aspect-[3/4] rounded-[24px] overflow-hidden glass-panel group"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-silk-100 via-white to-lab-50 transition-transform duration-700 group-hover:scale-110" />
+      <div className="absolute inset-0 bg-gradient-to-br from-silk-100 via-white to-lab-50" />
+      <Image
+        src={item.image}
+        alt={item.title}
+        fill
+        sizes="(max-width: 768px) 280px, 340px"
+        className="object-cover transition-transform duration-700 group-hover:scale-110"
+      />
       <div className="absolute inset-0 flex flex-col justify-end p-6">
         <div className="glass rounded-2xl px-4 py-3">
           <h3 className="font-display text-lg mb-1">{item.title}</h3>
