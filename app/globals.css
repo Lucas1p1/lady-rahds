@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  /* Science side — "Lab Blue" */
+  --color-lab-50: #f3faff;
+  --color-lab-100: #dceefb;
+  --color-lab-200: #bfe1f7;
+  --color-lab-300: #a8d4f5;
+  --color-lab-400: #7ebeee;
+  --color-lab-500: #4fa3e3;
+  --color-lab-600: #2c7fc4;
+
+  /* Fashion side — "Silk Pink" */
+  --color-silk-50: #fff6fa;
+  --color-silk-100: #fbdcea;
+  --color-silk-200: #f7c2dd;
+  --color-silk-300: #f5a8d4;
+  --color-silk-400: #ee84be;
+  --color-silk-500: #e35fa6;
+  --color-silk-600: #c43f86;
+
+  /* Neutrals */
+  --color-canvas: #fafafc;
+  --color-ink-900: #0b0d12;
+  --color-ink-700: #20232b;
+  --color-ink-500: #565a66;
+  --color-ink-300: #9096a3;
+
+  /* Typography — variables are injected by next/font in app/layout.tsx */
+  --font-display: var(--font-display-family), ui-serif, Georgia, serif;
+  --font-sans: var(--font-sans-family), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-family), ui-monospace, monospace;
+
+  /* Shadows */
+  --shadow-glass: 0 8px 32px rgba(20, 30, 60, 0.08);
+  --shadow-glass-lg: 0 20px 60px rgba(20, 30, 60, 0.12);
+  --shadow-glow: 0 0 40px rgba(126, 190, 238, 0.35);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: #fafafc;
+  color: #0b0d12;
+  overflow-x: hidden;
+}
+
+body {
+  cursor: none;
+}
+
+@media (max-width: 768px), (hover: none) {
+  body {
+    cursor: auto;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* ---------- Glassmorphism ---------- */
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(20, 30, 60, 0.08);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+/* ---------- Aurora background ---------- */
+.aurora-bg {
+  background-image: radial-gradient(circle at 20% 20%, rgba(168, 212, 245, 0.55), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(245, 168, 212, 0.5), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(220, 238, 251, 0.6), transparent 55%);
+  background-size: 160% 160%;
+  animation: drift 18s ease-in-out infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, #4fa3e3, #e35fa6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Custom cursor ---------- */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: normal;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ---------- Scroll progress rail ---------- */
+.scroll-rail {
+  position: fixed;
+  top: 0;
+  right: 18px;
+  width: 3px;
+  height: 100vh;
+  z-index: 60;
+  transform-origin: top;
+}
+
+/* ---------- Marquee ---------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: rgba(227, 95, 166, 0.25);
+  color: #0b0d12;
+}
+
+/* ---------- Focus states ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #4fa3e3;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
